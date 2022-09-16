@@ -1,0 +1,78 @@
+:root{
+    --clr:#222327
+}
+.navigation-m{
+    position: relative;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.navigation-m ul {
+    display: flex;
+}
+.navigation-m ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 999;
+}
+.navigation-m ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navigation-m ul li a .icon-m{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: .5s;
+    color: var(--clr);
+}
+.navigation-m ul li.active-m a .icon-m{
+    transform: translateY(-29px);
+}
+.navigation-m ul li a .text-m{
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.navigation-m ul li.active-m a .text-m{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.indicator-m{
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #9da8b3;
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+}
+.nav-m-body{
+    
+position: fixed;
+    
+width: 100%;
+    
+z-index: 999;
+    
+bottom: 0;
+}

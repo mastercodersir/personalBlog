@@ -1,0 +1,144 @@
+.navigation-n{
+    position: fixed;
+    inset: 20px;
+    background: #181818;
+    width: 80px;
+    border-left: 10px solid #181818 ;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.05);
+    transition: .5s;
+    z-index: 999;
+}
+.navigation-n.active-n{
+    width: 300px;
+    border-radius: 20px;
+}
+.toggle-n{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-n::before{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background: #181818;
+    transform: translateY(-5px);
+    transition: 1s;
+}
+.toggle-n::after{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background: #181818;
+    transform: translateY(5px);
+    transition: 1s;
+}
+.navigation-n.active-n .toggle-n::before{
+    transform: translateY(0px) rotate(-405deg);
+}
+.navigation-n.active-n .toggle-n::after{
+    transform: translateY(0px) rotate(225deg);
+}
+.navigation-n ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+.navigation-n ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.navigation-n ul li:hover{
+    background: #fff;
+    color: #222;
+}
+.navigation-n ul li:nth-child(1){
+    top: 20px;
+    margin-bottom: 40px;
+    background: none;
+}
+.navigation-n ul li:not(:first-child):hover::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-bottom-right-radius: 20px;
+    box-shadow: 7.5px 7.5px 0 7.5px #fff;
+}
+.navigation-n ul li:not(:first-child):hover::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 7.5px -7.5px 0 7.5px #fff;
+}
+.navigation-n ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation-n ul li:hover:not(:first-child) a{
+    color: #222;
+}
+.navigation-n ul li a .icon-n{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.navigation-n ul li a .icon-n ion-icon{
+    font-size: 1.75em;
+}
+.navigation-n ul li a .title-n{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.baby{
+    width: 50px;
+    height: 50px;
+}
+.nav-dropdown{
+    
+position: absolute;
+    
+top: .6rem;
+    
+left: 4.1rem;
+}

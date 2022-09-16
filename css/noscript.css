@@ -1,0 +1,10 @@
+.noscript{
+    display: none !important;
+}
+.noscript-error{
+    margin-top: 20%;
+    margin-left: 3%;
+}
+.noscript-error img {
+    filter: grayscale(100%)
+}

@@ -1,0 +1,16 @@
+body{
+    background: #181818;
+    color: #fff !important;
+}
+.indicator-m{
+    transform: translateX(calc(70px*3));
+}
+.header-svg {
+    width: 20px;
+    fill: #fff;
+    
+}
+.list-unstyled > li > a >  span > svg{
+    fill: #fff;
+    width: 30px !important;
+}

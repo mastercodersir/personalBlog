@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    background-color: #181818;
+}
+
+.header-svg {
+    width: 20px;
+    fill: #fff;
+
+}
+
+.search {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.header-img {
+    cursor: pointer;
+}
+
+.header-img:hover {
+    opacity: .25 !important;
+    transition: .3s linear !important;
+}
+
+.admin {
+    width: 8% !important;
+}
+
+.card-image:hover {
+    filter: grayscale(100%);
+}
+
+main {
+    background-color: #F2F2F2;
+}
+
+.pagination {
+    background-color: transparent;
+}
+
+.pagination>li>a {
+    background-color: white;
+    color: #181818;
+}
+
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    color: #181818;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination>.active>a {
+    color: white;
+    background-color: #181818;
+    border: solid 1px #181818;
+}
+
+.pagination>.active>a:hover {
+    background-color: #181818;
+    border: solid 1px #181818;
+}
+
+.s2 {
+    background-color: #fff !important;
+}
+
+.footer-img {
+
+    display: flex;
+
+    height: 10rem;
+
+    overflow: hidden;
+}
+
+.footer-img>img {
+
+    height: 8rem;
+}
+
+.footer-img-subtile {
+    font-size: .8rem;
+}
+
+.about-Philosophy>a>svg {
+    width: 1.7rem;
+}
+
+.top-35 {
+    top: 33% !important;
+}
+
+footer {
+    background-color: #19191B;
+}
+
+/*music player question box for mobile */
+.question-box {
+    position: fixed;
+    z-index: 1000;
+    background-color: rgb(255, 255, 255);
+    bottom: 15%;
+}
+
+/*music player*/
+.music {
+    position: fixed;
+    height: 20%;
+    width: 100%;
+    bottom: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1001;
+}
+.right-click{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 11111;
+}
+
+@media screen and (max-width:400px){
+    .question-box{
+        display: none !important;
+    }
+    .music{
+        display:none !important;
+    }
+    *{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
